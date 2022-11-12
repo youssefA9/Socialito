@@ -1,0 +1,18 @@
+version: '3.8'
+services:
+  app:
+    build: 
+      context: .
+    ports:
+      - 5000:5000
+    image: api-docker
+    depends_on:
+      - mongo
+    container_name: socialito-API-container
+    command: npm start
+  mongo:
+    ports:
+      - 27017:27017
+    image: mongo
+    container_name: socialito-database-container
+    

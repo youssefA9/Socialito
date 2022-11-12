@@ -1,0 +1,32 @@
+version: '3.8'
+services:
+  nodejs:
+    build: 
+      context: .
+    ports:
+      - 5000:5000
+    image: api-docker
+    depends_on:
+      - mongo
+    container_name: socialito-API-container
+    command: npm start
+  mongo:
+    ports:
+      - 27017:27017
+    image: mongo
+    container_name: socialito-database-container
+
+  react:
+    build: 
+      context: .
+    ports:
+      - 3000:3000
+    environment:
+      PORT: 3000
+      PROXY_API: http://localhost:5000/api
+    image: app:react
+    depends_on: 
+      - nodejs
+    container_name: socialito-react-container
+    command: npm start
+    

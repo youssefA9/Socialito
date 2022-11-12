@@ -1,0 +1,98 @@
+.login{
+    width: 100vw;
+    height: 100vh;
+    background-color: #f0f2f5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.loginWrapper{
+    width: 70%;
+    height: 70%;
+    display: flex;
+}
+.loginLeft,.loginRight{
+    flex:1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.loginLogo{
+    font-size: 80px;
+    font-weight: 800;
+    color:#283546;
+    font-style: italic;
+   
+}
+.loginDesc{
+    color:purple;
+    font-style: italic;
+    font-weight:600;
+    font-size: 18px;
+
+}
+.loginBox{
+    height: 400px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.loginBoxForm{
+    height: 350px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.loginInput{
+    height: 50px;
+    border-radius: 10px;
+    border: 1px solid gray;
+    padding-left: 20px;
+    font-size: 18px;
+}
+.loginInput:focus{
+    outline: none;
+}
+.loginButton{
+    height: 50px;
+    border-radius: 10px;
+    border: none;
+    background-color: #283546;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+}
+.loginForgot{
+    text-align: center;
+    color:#555;
+    cursor: pointer;
+}
+.loginRegisterButton{
+    height: 50px;
+    border-radius: 10px;
+    border: none;
+    background-color: purple;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    width: 100%;
+    align-self: center;
+
+}
+.registerDivButton{
+    height: 50px;
+    border-radius: 10px;
+    border: none;
+    background-color: purple;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    width: 92%;
+    align-self: center;
+}
