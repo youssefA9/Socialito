@@ -1,7 +1,7 @@
 # Socialito
  Social media platform
 
-#Technologies used
+# Technologies used
  1-NodeJs
  2-MongoDB
  3-ReactJs
